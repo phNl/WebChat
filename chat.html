@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>phNl Chat</title>
+    <link rel="stylesheet" href="/chat.css">
+</head>
+<body>
+    <div class='chat'>
+        <div class='chat-messages' id='chat-messages'>
+            <div class='chat-messages__content' id='messages'>
+            </div>
+        </div>
+        <div class='chat-input'>
+            <form method='post' id='chat-form'>
+                <label for='message-text'>
+                </label>
+                <input type='text' id='message-text' class='chat-form__input' placeholder='Введите сообщение'>
+                <input type='submit' class='chat-form__submit' value='=>'>
+            </form>
+        </div>
+    </div>
+
+    <div id="authorization-form">
+        <form id="authorization-form-container">
+            <h1>Авторизация</h1>
+            <label><b>Логин</b></label>
+            <input type="text" id="loginInput" placeholder="Введите логин...">
+            <label><b>Пароль</b></label>
+            <input type="password" id="passwordInput" placeholder="Введите пароль...">
+            <button type="submit" class="btn login">Авторизация</button>
+            <button type="button" class="btn registration" onclick="register()">Регистрация</button>
+            <button type="button" class="btn cancel" onclick="closeAuthorizationForm()">Закрыть</button>
+        </form>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+</html>
